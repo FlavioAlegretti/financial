@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head lang="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Francine</title>
+    <link href="pergunta3.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+ 
+<body>
+    <div id="pergunta">
+        <div id="enunciado">
+            <label>Quando estou com você, me sinto completo:</label><br></br>
+        </div>
+        <div id="respostas">
+            <input type="radio" name="selection" onclick="resposta1()">Abraçar você</input>
+            <input type="radio" name="selection" onclick="resposta2()">Beijar você</input>
+            <input type="radio" name="selection" onclick="resposta3()">Dormir com você</input>
+            <input type="radio" name="selection" onclick="resposta4()">Acariciar você</input>
+        </div>
+
+        
+        <div id="coracao">
+            <img id="fofo" src="../heart.png" alt="fofura" style="display:none;">
+        </div>        
+        <div id="res1" style="display:none;">
+           <p>
+            Sentir cada parte do seu corpo, te agarrar com carinho e com pegada. Um momento que não quero que acabe, confortando você nos meus braços e acariciando seu corpo com minhas mãos.
+           </p>
+        </div>
+        <div id="res2" style="display:none;">
+            <p>
+                Todo meu sentimento, amor, carinho, pegada, atração e desejo está presente em cada beijo que dou em você. Eu adoro te beijar, te encher de beijos, beijar você todinha, olhar nos seus olhos e dizer que te amo muito.
+            </p>
+        </div>
+        <div id="res3" style="display:none;"> 
+            <p>
+                Deitar ao seu lado, abraçar você, com nossas pernas entrelaçadas, sentindo seu cheiro gostoso, sua respiração constante de um sono confortável onde vou sonhar e pensar em você a noite toda.
+            </p>
+        </div>
+        <div id="res4" style="display:none;">
+            <p>
+                Passar carinhosamente a mão pelo seu lindo rosto, pelo seu corpo sexy, demonstrando todo o carinho e amor que sinto por você, fazendo-lhe um cafuné, uma massagem, e te aconchegando nos meus braços, com você agarrada ao meu pescoço.
+            </p>
+        </div>
+
+        <div id="botoes">
+            <a href="pergunta2.html"><button>Anterior!</button></a>
+            <a href="final.html"><button>Próximo!</button></a>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+
+    function resposta1(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='block';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';
+    }
+
+    function resposta2(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='block';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';    }
+
+    function resposta3(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='block';
+        document.getElementById('res4').style.display='none'; 
+   }
+
+    function resposta4(){  
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='block';
+    }
+
+</script>
+
+
+</html>

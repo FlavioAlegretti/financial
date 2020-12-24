@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head lang="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Francine</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+ 
+<body>
+    <div id="pergunta">
+        <div id="enunciado">
+            <label>Quando penso em você, algumas palavras vêm à minha mente:</label><br></br>
+        </div>
+        <div id="respostas">
+            <input type="radio" name="selection" onclick="resposta1()">Respeito</input>
+            <input type="radio" name="selection" onclick="resposta2()">Carinho</input>
+            <input type="radio" name="selection" onclick="resposta3()">Confiança</input>
+            <input type="radio" name="selection" onclick="resposta4()">Amor</input>
+        </div>
+
+        <div id="coracao">
+            <img id="fofo" src="heart.png" alt="fofura" style="display:none;">
+        </div>        
+        <div id="res1" style="display:none;">
+           <p>
+            Nosso relacionamento tem essa palavra como um dos pilares, o qual sempre se manterá firme e estável, pois a atenção e a consideração esculpem o respeito, e em mim ele de forma natural existe por você.
+           </p>
+        </div>
+        <div id="res2" style="display:none;">
+            <p>
+                Desde nossos primeiros encontros, seu carinho por mim é um afeto único em minha vida, o qual lembro e sinto saudades todos os dias e noites.
+            </p>
+        </div>
+        <div id="res3" style="display:none;"> 
+            <p>
+                A verdade flutua livre por nossas palavras, e a certeza do amor e confiança que sinto por você é definitivamente o que tenho de mais precioso.
+            </p>
+        </div>
+        <div id="res4" style="display:none;">
+            <p>
+                Aos poucos, esse sentimento único e sincero que sinto por você foi surgindo, a partir de pequenas ações, carinhos e momentos que tivemos juntos. Hoje, amar você é o maior motivo do meu sorriso.
+            </p>
+        </div>
+        
+        <a href="continuacao/pergunta2.html"><button>Próxima!</button>
+    </div>
+</body>
+
+<script type="text/javascript">
+
+    function resposta1(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='block';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';
+    }
+
+    function resposta2(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='block';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';    }
+
+    function resposta3(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='block';
+        document.getElementById('res4').style.display='none'; 
+   }
+
+    function resposta4(){  
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='block';
+    }
+
+</script>
+
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+ 
+<head lang="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Francine</title>
+    <link href="pergunta2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+ 
+<body>
+    <div id="pergunta">
+        <div id="enunciado">
+            <label>Quando olho suas fotos, certas sensações tomam espaço em mim:</label><br></br>
+        </div>
+        <div id="respostas">
+            <input type="radio" name="selection" onclick="resposta1()">Admiração</input>
+            <input type="radio" name="selection" onclick="resposta2()">Desejo</input>
+            <input type="radio" name="selection" onclick="resposta3()">Paixão</input>
+            <input type="radio" name="selection" onclick="resposta4()">Inspiração</input>
+        </div>
+
+        <div id="coracao">
+            <img id="fofo" src="../heart.png" alt="fofura" style="display:none;">
+        </div>        
+        <div id="res1" style="display:none;">
+           <p>
+            Eu te admiro muito. Seu jeito de ser, de agir, pensar e pela pessoa boa que você é. Minha gata muito inteligente e responsável, a mulher mais incrível e maravilhosa desse mundo.
+           </p>
+        </div>
+        <div id="res2" style="display:none;">
+            <p>
+                Me faz querer estar com você, sentindo seu corpo colado ao meu, sentindo seu cheiro, seu calor com seu corpo carinhosamente envolvido nos meus braços e seu rosto recebendo meus mais amorosos beijos.
+            </p>
+        </div>
+        <div id="res3" style="display:none;"> 
+            <p>
+                Um sentimento de carinho, encantado pela sua personalidade e pela sua beleza que brilha em meus olhos. Você é a mulher mais linda, a mais elegante, a mais charmosa e com o sorriso mais belo do mundo.
+            </p>
+        </div>
+        <div id="res4" style="display:none;">
+            <p>
+                Olhar para você me dá vontade de ir além, de buscar cada vez mais e de jamais parar, pois quero estar ao seu lado, crescendo junto com você, minha parceira, minha princesa, a mulher da minha vida.
+            </p>
+        </div>
+
+        <div id="botoes">
+            <a href="../index.html"><button>Anterior</button></a>
+            <a href="pergunta3.html"><button>Próxima</button></a>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+
+    function resposta1(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='block';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';
+    }
+
+    function resposta2(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='block';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='none';    }
+
+    function resposta3(){ 
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='block';
+        document.getElementById('res4').style.display='none'; 
+   }
+
+    function resposta4(){  
+        document.getElementById('fofo').style.display='block';
+        document.getElementById('res1').style.display='none';
+        document.getElementById('res2').style.display='none';
+        document.getElementById('res3').style.display='none';
+        document.getElementById('res4').style.display='block';
+    }
+
+</script>
+
+
+</html>

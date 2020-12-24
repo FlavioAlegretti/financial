@@ -1,0 +1,121 @@
+body{
+    font-family: 'Fresca', sans-serif;
+    color:  rgb(199, 0, 116);
+    font-size: 30px;
+    background-color: rgb(0, 255, 234);
+}
+
+
+
+
+#pergunta{
+    text-align: center;
+    margin-top: 30vh;
+
+    animation: yourAnimation 1.5s forwards 0s ease;
+}
+
+
+#respostas{
+    animation: respostas 1.5s forwards 0s ease;
+}
+
+@keyframes respostas{
+    0%{
+        transform: rotate(0) translateX(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+#coracao{
+    display: flex;
+    justify-content: center;
+}
+
+#fofo{
+    width: 150px;
+    height: 150px;
+    animation: coracaum 2s infinite 0s ease;
+}
+
+@keyframes coracaum{
+    0%{
+        transform: rotate(0);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0);
+        opacity: 1;
+        }
+}
+
+#res1{
+    animation:res1 10s forwards 0s ease;
+}
+
+@keyframes res1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#res2{
+    animation:res2 20s forwards 0s ease;
+}
+
+@keyframes res2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#res3{
+    animation:res3 30s forwards 0s ease;
+}
+
+@keyframes res3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#res4{
+    animation:res4 40s forwards 0s ease;
+}
+
+@keyframes res4{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* MEXE AQUI FLÁVIO PRO TAMANHO DA RESPOSTA*/
+p{  
+    font-size: x-large;
+    animation:texto 2s forwards 0s ease;
+}
+
+@keyframes texto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
